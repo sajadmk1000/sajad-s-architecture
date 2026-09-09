@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b1a" />
+      <stop offset="100%" stop-color="#121211" />
+    </linearGradient>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ddbe91" />
+      <stop offset="100%" stop-color="#b69567" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)" />
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#2e2c28" stroke-width="1.5" />
+
+  <!-- Architectural corner brackets -->
+  <path d="M10 16 L10 10 L16 10" fill="none" stroke="url(#brassGrad)" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M54 48 L54 54 L48 54" fill="none" stroke="url(#brassGrad)" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Architectural 'S' glyph -->
+  <path d="M41 21 H25.5 C20.8 21 17 24.6 17 29 C17 33.2 20.2 34.8 24.5 35.4 L39.5 37 C43.8 37.6 47 39.4 47 43.5 C47 47.9 43.2 51.5 38.5 51.5 H23" 
+        fill="none" 
+        stroke="#f2efe9" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Terminal brass nodes -->
+  <circle cx="41" cy="21" r="2.5" fill="url(#brassGrad)" />
+  <circle cx="23" cy="51.5" r="2.5" fill="url(#brassGrad)" />
+</svg>
