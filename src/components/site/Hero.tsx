@@ -188,7 +188,7 @@ export function Hero() {
           <div className="absolute -inset-3 border-l-2 border-brass/70" />
           <div className="relative overflow-hidden bg-graphite etched">
             <img
-              src={portrait.url}
+              src="/images/sajad-portrait.png"
               alt="Portrait of Sajad MK, backend engineer and application architect"
               width={1129}
               height={1412}

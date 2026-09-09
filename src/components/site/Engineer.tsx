@@ -12,7 +12,7 @@ export function Engineer() {
             <div className="absolute -inset-3 border border-border" />
             <div className="relative overflow-hidden bg-graphite etched">
               <img
-                src={desk.url}
+                src="/images/sajad-desk.png"
                 alt="Sajad MK working at his desk"
                 width={1280}
                 height={853}
