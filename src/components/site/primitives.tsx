@@ -18,10 +18,11 @@ export function Reveal({
       ref={ref}
       className={className}
       initial={{ opacity: 0, y: 18 }}
-      animate={inView ? { opacity: 1, y: 0 } : undefined}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 }}
       transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
+
     </motion.div>
   );
 }

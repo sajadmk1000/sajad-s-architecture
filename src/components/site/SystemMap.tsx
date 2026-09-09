@@ -105,7 +105,7 @@ export function SystemMap() {
           <div className="mt-10 border border-border bg-card/40">
             <div className="border-b border-border px-5 py-3">
               <span className="tech-label text-[10px]">
-                {active === null ? "Hover a node — trace the path" : `${applicationNodes[active].id} · ${applicationNodes[active].layer}`}
+                {active === null ? "Hover a node — trace the path" : `${applicationNodes[active]?.id} · ${applicationNodes[active]?.layer}`}
               </span>
             </div>
             <ol className="divide-y divide-border">

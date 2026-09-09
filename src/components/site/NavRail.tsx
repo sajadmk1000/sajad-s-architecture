@@ -11,20 +11,21 @@ const navItems = [
 ];
 
 export function NavRail() {
-  const [active, setActive] = useState(acts[0].id);
+  const [active, setActive] = useState<string>(acts[0]!.id);
   const [condensed, setCondensed] = useState(false);
 
   useEffect(() => {
     const ids = acts.map((a) => a.id);
     const onScroll = () => {
       setCondensed(window.scrollY > 120);
-      let current = ids[0];
+      let current = ids[0]!;
       for (const id of ids) {
         const el = document.getElementById(id);
         if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.35) current = id;
       }
       setActive(current);
     };
+
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);

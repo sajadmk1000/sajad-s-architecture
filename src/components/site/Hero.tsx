@@ -67,7 +67,7 @@ function ArchitectureBackdrop() {
             x1={120 + i * 70}
             x2={120 + i * 70}
             y1={l.y}
-            y2={layers[i + 1].y}
+            y2={layers[i + 1]!.y}
             stroke="var(--brass)"
             strokeWidth="0.9"
             initial={{ pathLength: 0, opacity: 0 }}
