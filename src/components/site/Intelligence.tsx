@@ -43,7 +43,7 @@ export function Intelligence() {
             through MCP and RAG, automating business processes with real company context.
           </p>
           <p className="mt-6 max-w-md text-[13.5px] leading-relaxed text-muted-foreground">
-            {steps[active].note}
+            {steps[active]!.note}
           </p>
         </div>
 
